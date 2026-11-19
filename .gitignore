@@ -13,7 +13,7 @@ logs/
 ### Environment Variables ###
 .env
 .env.*
-!.env.example
+.env.example
 
 ### Application Secrets ###
 application-secret.yml
