@@ -1,0 +1,9 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/posdb
+    username: postgres
+    password: postgres
+
+jwt:
+  secret: change-me-for-local-development

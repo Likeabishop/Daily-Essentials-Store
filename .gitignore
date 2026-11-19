@@ -1,0 +1,76 @@
+### Maven ###
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### Spring Boot ###
+logs/
+*.log
+*.log.*
+
+### Environment Variables ###
+.env
+.env.*
+!.env.example
+
+### Application Secrets ###
+application-secret.yml
+application-secrets.yml
+
+### IntelliJ ###
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+### VS Code ###
+.vscode/
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### OS Files ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Java ###
+*.class
+
+### Coverage ###
+coverage/
+.jacoco/
+*.exec
+
+### Temporary Files ###
+*.tmp
+*.swp
+*.bak
+
+### Testcontainers ###
+.testcontainers.properties
+
+### PostgreSQL Dumps ###
+*.sql.gz
+*.dump
+*.backup
