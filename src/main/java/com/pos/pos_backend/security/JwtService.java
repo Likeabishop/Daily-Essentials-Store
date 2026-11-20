@@ -79,4 +79,22 @@ public class JwtService {
             return false;
         }
     }
+
+    public Long extractUserId(String token) {
+
+        return extractClaims(token)
+            .get("userId", Long.class);
+    }
+
+    public Long extractBusinessId(String token) {
+
+    return extractClaims(token)
+            .get("businessId", Long.class);
+    }
+
+    public String extractRole(String token) {
+
+    return extractClaims(token)
+        .get("role", String.class);
+    }
 }
