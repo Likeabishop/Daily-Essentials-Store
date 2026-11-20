@@ -2,6 +2,7 @@ package com.pos.pos_backend.inventory.entity;
 
 import java.time.OffsetDateTime;
 
+import com.pos.pos_backend.entity.BaseEntity;
 import com.pos.pos_backend.inventory.dto.InventoryMovementType;
 import com.pos.pos_backend.product.entity.ProductVariant;
 import com.pos.pos_backend.user.entity.User;
@@ -16,7 +17,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class InventoryMovement {
+public class InventoryMovement extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -45,5 +46,4 @@ public class InventoryMovement {
 
     private String referenceNumber;
 
-    private OffsetDateTime createdAt;
 }
