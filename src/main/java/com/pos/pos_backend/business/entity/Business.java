@@ -18,6 +18,8 @@ public class Business extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private Long businessId;
+
     @Column(nullable = false)
     private String name;
 
