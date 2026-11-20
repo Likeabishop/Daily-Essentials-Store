@@ -13,7 +13,7 @@ public interface InventoryRepository
         extends JpaRepository<Inventory, Long> {
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
-    Optional<Inventory> findByVariantId(
+    Optional<Inventory> findByVariant_Id(
             Long variantId
     );
 }
